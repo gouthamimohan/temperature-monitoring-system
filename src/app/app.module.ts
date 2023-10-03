@@ -1,18 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TemperatureAlarmComponent } from './temperature-alarm.component';
+import { TemperatureSensorService } from './temperature-sensor.service';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [AppComponent, TemperatureAlarmComponent],
+  imports: [BrowserModule],
+  providers: [TemperatureSensorService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
+
+

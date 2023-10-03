@@ -1,10 +1,8 @@
+
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: '<app-temperature-alarm></app-temperature-alarm>',
 })
-export class AppComponent {
-  title = 'temperature-monitoring-system';
-}
+export class AppComponent {}
